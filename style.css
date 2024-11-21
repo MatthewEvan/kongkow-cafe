@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+header nav {
+    width: 100%;
+    height: 3.5rem;
+    background: rgba(244, 67, 54, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+header nav h1 {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    padding: 3.5rem 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.image-container {
+    width: 100%;
+    height: 65vh;
+}
+.image-container img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kongkow-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kongkow-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.kongkow-header h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.kongkow-header p {
+    padding-top: 0.25rem;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+.menu-list > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu-list div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding-inline: 1rem;
+    text-wrap: balance;
+}
+.description h3 {
+    font-size: 1.25rem;
+}
+.description p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.price-list {
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.4rem;
+}
+.price-list div {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list div:first-child .price-list div:first-child {
+    display: inline;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container, .image-container img {
+        height: 45vh;
+    }
+
+    .menu-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .menu-list {
+        grid-template-columns: 1fr;
+    }
+}
