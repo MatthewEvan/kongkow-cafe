@@ -1,9 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 14px;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 header nav {
@@ -46,11 +47,9 @@ main {
 }
 .kongkow-header h1 {
     font-size: 2rem;
-    font-weight: 700;
 }
 .kongkow-header h2 {
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.5rem;
 }
 .kongkow-header p {
     padding-top: 0.25rem;
@@ -83,7 +82,7 @@ main {
     text-wrap: balance;
 }
 .description h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 .description p {
     text-align: center;
@@ -102,7 +101,13 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.menu-list div:first-child .price-list div:first-child {
+
+.menu-list > div:first-child .price-list div:first-child p, 
+.price-list div p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+.menu-list > div:first-child .price-list div:first-child {
     display: inline;
     text-align: right;
 }
